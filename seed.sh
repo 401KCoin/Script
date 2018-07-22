@@ -43,13 +43,6 @@ if [[ $DOSETUP =~ "y" ]] ; then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
 
-  sudo apt-get install -y ufw
-  sudo ufw allow ssh/tcp
-  sudo ufw limit ssh/tcp
-  sudo ufw logging on
-  echo "y" | sudo ufw enable
-  sudo ufw status
-
   mkdir -p ~/bin
   echo 'export PATH=~/bin:$PATH' > ~/.bash_aliases
   source ~/.bashrc
@@ -62,9 +55,6 @@ wget https://github.com/401KCoin/Script/raw/master/401kcoin-qt
 wget https://github.com/401KCoin/Script/raw/master/401kcoind
 sudo chmod 755 401kcoin*
 sudo mv 401kcoin* /usr/bin
-
-## BACKUP WALLET
-cp ~/.401kcoin/wallet.dat ~/
 
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
@@ -86,7 +76,5 @@ echo "addnode=139.59.56.40" >> $CONF_DIR/$CONF_FILE
 echo "addnode=167.99.64.179" >> $CONF_DIR/$CONF_FILE
 echo "addnode=159.65.143.31" >> $CONF_DIR/$CONF_FILE
 echo "addnode=188.166.82.245" >> $CONF_DIR/$CONF_FILE
-
-sudo ufw allow $PORT/tcp
 
 401kcoind
