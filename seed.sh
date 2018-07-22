@@ -69,6 +69,7 @@ cp ~/.401kcoin/wallet.dat ~/
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
 CONF_FILE=401kcoin.conf
+PORT=55002
 
 echo "staking=0" >> $CONF_DIR/$CONF_FILE
 echo "reindex=1" >> $CONF_DIR/$CONF_FILE
