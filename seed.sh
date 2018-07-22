@@ -75,16 +75,16 @@ echo "reindex=1" >> $CONF_DIR/$CONF_FILE
 echo "listen=1" >> $CONF_DIR/$CONF_FILE
 echo "server=1" >> $CONF_DIR/$CONF_FILE
 echo "daemon=1" >> $CONF_DIR/$CONF_FILE
-echo "addnode=167.99.144.178:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=206.189.171.147:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=138.197.159.182:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=178.128.54.249:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=178.128.1.74:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=165.227.62.111:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=139.59.56.40:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=167.99.64.179:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=159.65.143.31:55002" >> $CONF_DIR/$CONF_FILE
-echo "addnode=188.166.82.245:55002" >> $CONF_DIR/$CONF_FILE
+echo "addnode=167.99.144.178" >> $CONF_DIR/$CONF_FILE
+echo "addnode=206.189.171.147" >> $CONF_DIR/$CONF_FILE
+echo "addnode=138.197.159.182" >> $CONF_DIR/$CONF_FILE
+echo "addnode=178.128.54.249" >> $CONF_DIR/$CONF_FILE
+echo "addnode=178.128.1.74" >> $CONF_DIR/$CONF_FILE
+echo "addnode=165.227.62.111" >> $CONF_DIR/$CONF_FILE
+echo "addnode=139.59.56.40" >> $CONF_DIR/$CONF_FILE
+echo "addnode=167.99.64.179" >> $CONF_DIR/$CONF_FILE
+echo "addnode=159.65.143.31" >> $CONF_DIR/$CONF_FILE
+echo "addnode=188.166.82.245" >> $CONF_DIR/$CONF_FILE
 
 sudo ufw allow $PORT/tcp
 
