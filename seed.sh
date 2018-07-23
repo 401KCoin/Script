@@ -59,22 +59,30 @@ sudo mv 401kcoin* /usr/bin
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
 CONF_FILE=401kcoin.conf
-PORT=55002
+
+## BACKUP WALLET AND MASTERNODE
+sudo cp $CONF_DIR/wallet.data ~/
+sudo cp $CONF_DIR/masternode.conf ~/
+sudo cp $CONF_DIR/$CONF_FILE.conf ~/
+
+## IP=$(curl -s4 icanhazip.com)
 
 echo "staking=0" >> $CONF_DIR/$CONF_FILE
 echo "reindex=1" >> $CONF_DIR/$CONF_FILE
 echo "listen=1" >> $CONF_DIR/$CONF_FILE
 echo "server=1" >> $CONF_DIR/$CONF_FILE
 echo "daemon=1" >> $CONF_DIR/$CONF_FILE
-echo "addnode=167.99.144.178" >> $CONF_DIR/$CONF_FILE
-echo "addnode=206.189.171.147" >> $CONF_DIR/$CONF_FILE
-echo "addnode=138.197.159.182" >> $CONF_DIR/$CONF_FILE
-echo "addnode=178.128.54.249" >> $CONF_DIR/$CONF_FILE
-echo "addnode=178.128.1.74" >> $CONF_DIR/$CONF_FILE
-echo "addnode=165.227.62.111" >> $CONF_DIR/$CONF_FILE
+
+echo "addnode=178.128.145.147" >> $CONF_DIR/$CONF_FILE
+echo "addnode=167.99.45.10" >> $CONF_DIR/$CONF_FILE
+echo "addnode=139.59.74.84" >> $CONF_DIR/$CONF_FILE
+echo "addnode=206.189.58.59" >> $CONF_DIR/$CONF_FILE
+echo "addnode=178.128.194.194" >> $CONF_DIR/$CONF_FILE
+echo "addnode=206.189.126.13" >> $CONF_DIR/$CONF_FILE
 echo "addnode=139.59.56.40" >> $CONF_DIR/$CONF_FILE
 echo "addnode=167.99.64.179" >> $CONF_DIR/$CONF_FILE
 echo "addnode=159.65.143.31" >> $CONF_DIR/$CONF_FILE
 echo "addnode=188.166.82.245" >> $CONF_DIR/$CONF_FILE
+echo "addnode=138.68.9.80" >> $CONF_DIR/$CONF_FILE
 
 401kcoind
