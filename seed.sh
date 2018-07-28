@@ -49,6 +49,8 @@ if [[ $DOSETUP =~ "y" ]] ; then
 fi
 
 ## COMPILE AND INSTALL
+rm /usr/bin/401k*
+
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-cli
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-tx
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-qt
