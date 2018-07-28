@@ -58,7 +58,7 @@ wget https://github.com/401KCoin/Script/raw/master/401kcoin-tx
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-qt
 wget https://github.com/401KCoin/Script/raw/master/401kcoind
 sudo chmod 755 401kcoin*
-sudo mv 401kcoin* /usr/bin
+sudo mv 401kcoin* /usr/local/bin
 
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
