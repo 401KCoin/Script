@@ -51,6 +51,7 @@ fi
 ## COMPILE AND INSTALL
 
 rm /usr/local/bin/401k*
+rm /usr/bin/401k*
 
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-cli
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-tx
