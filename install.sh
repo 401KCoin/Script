@@ -60,12 +60,9 @@ sudo cp $CONF_DIR/$CONF_FILE.conf ~/
 
 ## IP=$(curl -s4 icanhazip.com)
 
-echo "staking=1" >> $CONF_DIR/$CONF_FILE
-echo "reindex=1" >> $CONF_DIR/$CONF_FILE
 echo "listen=1" >> $CONF_DIR/$CONF_FILE
 echo "server=1" >> $CONF_DIR/$CONF_FILE
 echo "daemon=1" >> $CONF_DIR/$CONF_FILE
-
 echo "addnode=178.128.145.147" >> $CONF_DIR/$CONF_FILE
 echo "addnode=167.99.45.10" >> $CONF_DIR/$CONF_FILE
 echo "addnode=139.59.74.84" >> $CONF_DIR/$CONF_FILE
