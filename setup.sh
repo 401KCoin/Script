@@ -66,7 +66,7 @@ sudo mv 401kcoin* /usr/bin
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
 CONF_FILE=401kcoin.conf
-PORT=5512
+PORT=6622
 
 wget https://github.com/401KCoin/Script/raw/master/peers.dat -O $CONF_DIR/peers.dat
 

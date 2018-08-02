@@ -98,7 +98,7 @@ for i in `seq 1 1 $MNCOUNT`; do
     ALIAS=${ALIAS,,}
     CONF_DIR=~/.${NAME}_$ALIAS
     CONF_FILE=401kcoin.conf
-    PORT=5512
+    PORT=6622
     
     # Create scripts
     echo '#!/bin/bash' > ~/bin/${NAME}d_$ALIAS.sh
