@@ -117,6 +117,7 @@ for i in `seq 1 1 $MNCOUNT`; do
     echo "listen=1" >> ${NAME}.conf_TEMP
     echo "server=1" >> ${NAME}.conf_TEMP
     echo "daemon=1" >> ${NAME}.conf_TEMP
+    echo "staking=0" >> ${NAME}.conf_TEMP
     echo "logtimestamps=1" >> ${NAME}.conf_TEMP
     echo "maxconnections=256" >> ${NAME}.conf_TEMP
     echo "masternode=1" >> ${NAME}.conf_TEMP
@@ -137,7 +138,7 @@ for i in `seq 1 1 $MNCOUNT`; do
     echo "addnode=167.99.64.179" >> $CONF_DIR/$CONF_FILE
     echo "addnode=159.65.143.31" >> $CONF_DIR/$CONF_FILE
     echo "addnode=188.166.82.245" >> $CONF_DIR/$CONF_FILE
-echo "addnode=138.68.9.80" >> $CONF_DIR/$CONF_FILE
+    echo "addnode=138.68.9.80" >> $CONF_DIR/$CONF_FILE
 
     sudo ufw allow $PORT/tcp
 
