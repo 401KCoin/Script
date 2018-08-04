@@ -57,7 +57,6 @@ fi
 
 ## COMPILE AND INSTALL
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-cli
-wget https://github.com/401KCoin/Script/raw/master/401kcoin-qt
 wget https://github.com/401KCoin/Script/raw/master/401kcoin-tx
 wget https://github.com/401KCoin/Script/raw/master/401kcoind
 sudo chmod 755 401kcoin*
