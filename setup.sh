@@ -58,7 +58,7 @@ mkdir $CONF_DIR
 CONF_FILE=401kcoin.conf
 PORT=6622
 
-wget https://github.com/401KCoin/Script/raw/master/peers.dat -O $CONF_DIR/peers.dat
+## wget https://github.com/401KCoin/Script/raw/master/peers.dat -O $CONF_DIR/peers.dat
 
 IP=$(curl -s4 icanhazip.com)
 
