@@ -51,7 +51,7 @@ wget https://github.com/401KCoin/Script/raw/master/401kcoin-tx
 wget https://github.com/401KCoin/Script/raw/master/401kcoind
 sudo chmod 755 401kcoin*
 sudo cp 401kcoin* /usr/bin
-sudo cp 401kcoin* /usr/local/bin
+sudo mv 401kcoin* /usr/local/bin
 
 CONF_DIR=~/.401kcoin/
 mkdir $CONF_DIR
@@ -75,12 +75,11 @@ echo "daemon=1" >> $CONF_DIR/$CONF_FILE
 echo "logtimestamps=1" >> $CONF_DIR/$CONF_FILE
 echo "maxconnections=256" >> $CONF_DIR/$CONF_FILE
 echo "masternode=1" >> $CONF_DIR/$CONF_FILE
-echo "" >> $CONF_DIR/$CONF_FILE
-echo "" >> $CONF_DIR/$CONF_FILE
 echo "port=$PORT" >> $CONF_DIR/$CONF_FILE
+echo "externalip=$IP" >> $CONF_DIR/$CONF_FILE
+echo "bind=$IP" >> $CONF_DIR/$CONF_FILE
 echo "masternodeaddr=$IP:$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
-
 echo "addnode=178.128.145.147" >> $CONF_DIR/$CONF_FILE
 echo "addnode=167.99.45.10" >> $CONF_DIR/$CONF_FILE
 echo "addnode=139.59.74.84" >> $CONF_DIR/$CONF_FILE
