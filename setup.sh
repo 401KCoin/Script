@@ -94,4 +94,6 @@ echo "addnode=138.68.9.80" >> $CONF_DIR/$CONF_FILE
 
 sudo ufw allow $PORT/tcp
 
+sleep 5
+
 401kcoind
